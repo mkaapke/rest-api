@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/swtpj</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">555Nase!</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping class="database.entyties.User"/>
+        <!--<mapping class="database.entyties.Asset"/>
+        <mapping class="database.entyties.AssetFeatures"/>
+        <mapping class="database.entyties.AssetType"/>
+        <mapping class="database.entyties.AssetTypeHasAssetType"/>
+        <mapping class="database.entyties.Checkpoints"/>
+        <mapping class="database.entyties.Group"/>
+        <mapping class="database.entyties.GroupHasPermission"/>
+        <mapping class="database.entyties.MultimediaFile"/>
+        <mapping class="database.entyties.MultimediaFileHasAsset"/>
+        <mapping class="database.entyties.MultimediaFileHasAssetType"/>
+        <mapping class="database.entyties.Permission"/>
+        <mapping class="database.entyties.Position"/>
+        <mapping class="database.entyties.Tag"/>
+        <mapping class="database.entyties.Task"/>
+        <mapping class="database.entyties.TaskHistory"/>
+        <mapping class="database.entyties.TaskTemplate"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+
+    </session-factory>
+</hibernate-configuration>
